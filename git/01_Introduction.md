@@ -4,7 +4,7 @@
 - 소스코드의 히스토리(Version)를 기록
 
 ## 버전 컨트롤 원리
-- Snapshop
+- Snapshot
   - Git이 추적(track)하는 파일들의 현재 상태.
   - Git이 추적하는 파일이라는 것은 Git 시스템이 인지하는 파일이라는 뜻이다.
   - 다시 말해, Git의 마지막 Snapshop에 포함되거나 Staging area에 올려진 파일들을 일컫는다.
