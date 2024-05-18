@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 현재 날짜와 시간을 가져옵니다.
-current_date=$(date +"%y_%m_%d_%H_%M")
+current_date=$(date +"%y%m%d_%H%M")
 
 # 최근 커밋 메시지를 가져옵니다.
 last_commit_message=$(git log -1 --pretty=%B)
@@ -21,6 +21,6 @@ commit_message="${commit_number}차_${current_date}"
 
 # Git 명령을 실행합니다.
 git add .
-git commit -m "$commit_message"
+git commit -m "$commit_message $1"
 git push origin $(git rev-parse --abbrev-ref HEAD)
 
